@@ -1,0 +1,10 @@
+#Text files
+*.docx
+
+# Environment files
+*.env
+venv/
+
+# Data files
+*.csv
+*.xlsx
