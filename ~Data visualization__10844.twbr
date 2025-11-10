@@ -1,0 +1,988 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_logistics_data' inline='true' name='federated.1ozg3r41qg6ctp1akycgz0l899df' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_logistics_data' name='textscan.19624pw0380fmb1dktjhb0bl67fk'>
+            <connection class='textscan' directory='C:/Users/BOB/Documents/Data Analysis/Di-bootcamp_final_project' filename='cleaned_logistics_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.19624pw0380fmb1dktjhb0bl67fk' name='cleaned_logistics_data.csv' table='[cleaned_logistics_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='timestamp' ordinal='0' />
+            <column datatype='real' name='vehicle_gps_latitude' ordinal='1' />
+            <column datatype='real' name='vehicle_gps_longitude' ordinal='2' />
+            <column datatype='real' name='fuel_consumption_rate' ordinal='3' />
+            <column datatype='real' name='eta_variation_hours' ordinal='4' />
+            <column datatype='real' name='traffic_congestion_level' ordinal='5' />
+            <column datatype='real' name='warehouse_inventory_level' ordinal='6' />
+            <column datatype='real' name='loading_unloading_time' ordinal='7' />
+            <column datatype='real' name='handling_equipment_availability' ordinal='8' />
+            <column datatype='real' name='order_fulfillment_status' ordinal='9' />
+            <column datatype='real' name='weather_condition_severity' ordinal='10' />
+            <column datatype='real' name='port_congestion_level' ordinal='11' />
+            <column datatype='real' name='shipping_costs' ordinal='12' />
+            <column datatype='real' name='supplier_reliability_score' ordinal='13' />
+            <column datatype='real' name='lead_time_days' ordinal='14' />
+            <column datatype='real' name='historical_demand' ordinal='15' />
+            <column datatype='real' name='iot_temperature' ordinal='16' />
+            <column datatype='real' name='cargo_condition_status' ordinal='17' />
+            <column datatype='real' name='route_risk_level' ordinal='18' />
+            <column datatype='real' name='customs_clearance_time' ordinal='19' />
+            <column datatype='real' name='driver_behavior_score' ordinal='20' />
+            <column datatype='real' name='fatigue_monitoring_score' ordinal='21' />
+            <column datatype='real' name='disruption_likelihood_score' ordinal='22' />
+            <column datatype='real' name='delay_probability' ordinal='23' />
+            <column datatype='integer' name='risk_classification' ordinal='24' />
+            <column datatype='real' name='delivery_time_deviation' ordinal='25' />
+            <column datatype='string' name='vehicle_location' ordinal='26' />
+            <column datatype='real' name='eta_variation_minutes' ordinal='27' />
+            <column datatype='string' name='traffic_category' ordinal='28' />
+            <column datatype='integer' name='severe_weather_flag' ordinal='29' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vehicle_gps_latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vehicle_gps_latitude]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>vehicle_gps_latitude</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vehicle_gps_longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vehicle_gps_longitude]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>vehicle_gps_longitude</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fuel_consumption_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fuel_consumption_rate]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>fuel_consumption_rate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eta_variation_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eta_variation_hours]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>eta_variation_hours</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>traffic_congestion_level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[traffic_congestion_level]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>traffic_congestion_level</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>warehouse_inventory_level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[warehouse_inventory_level]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>warehouse_inventory_level</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loading_unloading_time</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[loading_unloading_time]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>loading_unloading_time</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>handling_equipment_availability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[handling_equipment_availability]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>handling_equipment_availability</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_fulfillment_status</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[order_fulfillment_status]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>order_fulfillment_status</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weather_condition_severity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weather_condition_severity]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>weather_condition_severity</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>port_congestion_level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[port_congestion_level]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>port_congestion_level</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shipping_costs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[shipping_costs]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>shipping_costs</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>supplier_reliability_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[supplier_reliability_score]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>supplier_reliability_score</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lead_time_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lead_time_days]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>lead_time_days</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>historical_demand</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[historical_demand]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>historical_demand</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iot_temperature</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[iot_temperature]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>iot_temperature</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cargo_condition_status</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cargo_condition_status]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>cargo_condition_status</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>route_risk_level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[route_risk_level]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>route_risk_level</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customs_clearance_time</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[customs_clearance_time]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>customs_clearance_time</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>driver_behavior_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[driver_behavior_score]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>driver_behavior_score</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fatigue_monitoring_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fatigue_monitoring_score]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>fatigue_monitoring_score</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>disruption_likelihood_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[disruption_likelihood_score]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>disruption_likelihood_score</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delay_probability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[delay_probability]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>delay_probability</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>risk_classification</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[risk_classification]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>risk_classification</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery_time_deviation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[delivery_time_deviation]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>delivery_time_deviation</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vehicle_location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[vehicle_location]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>vehicle_location</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eta_variation_minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eta_variation_minutes]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>eta_variation_minutes</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>traffic_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[traffic_category]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>traffic_category</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>severe_weather_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[severe_weather_flag]</local-name>
+            <parent-name>[cleaned_logistics_data.csv]</parent-name>
+            <remote-alias>severe_weather_flag</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='on_time_flag' datatype='integer' name='[Calculation_763078666546966528]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [delivery_time_deviation] &lt;= 0 THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='on_time%' datatype='real' name='[Calculation_763078666547306497]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Calculation_763078666546966528])' />
+      </column>
+      <column caption='delay_hours_absolute' datatype='real' name='[Calculation_763078666547650562]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ABS([delivery_time_deviation])' />
+      </column>
+      <column caption='cost_efficiency_ratio' datatype='real' name='[Calculation_763078666547990531]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[shipping_costs] / ([delivery_time_deviation] + 1)' />
+      </column>
+      <column caption='delay_severity' datatype='string' name='[Calculation_763078666548277252]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [delay_probability] &gt;= 0.8 THEN &quot;Very High&quot;&#13;&#10;ELSEIF [delay_probability] &gt;= 0.5 THEN &quot;High&quot;&#13;&#10;ELSEIF [delay_probability] &gt;= 0.2 THEN &quot;Medium&quot;&#13;&#10;ELSE &quot;Low&quot; END' />
+      </column>
+      <column caption='cleaned_logistics_data.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[vehicle_gps_latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[vehicle_gps_longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='string' name='[vehicle_location]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Israel&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='cleaned_logistics_data.csv' id='cleaned_logistics_data.csv_0EAFEABB05A149D3B5D87060E953C4DA'>
+            <properties context=''>
+              <relation connection='textscan.19624pw0380fmb1dktjhb0bl67fk' name='cleaned_logistics_data.csv' table='[cleaned_logistics_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='timestamp' ordinal='0' />
+                  <column datatype='real' name='vehicle_gps_latitude' ordinal='1' />
+                  <column datatype='real' name='vehicle_gps_longitude' ordinal='2' />
+                  <column datatype='real' name='fuel_consumption_rate' ordinal='3' />
+                  <column datatype='real' name='eta_variation_hours' ordinal='4' />
+                  <column datatype='real' name='traffic_congestion_level' ordinal='5' />
+                  <column datatype='real' name='warehouse_inventory_level' ordinal='6' />
+                  <column datatype='real' name='loading_unloading_time' ordinal='7' />
+                  <column datatype='real' name='handling_equipment_availability' ordinal='8' />
+                  <column datatype='real' name='order_fulfillment_status' ordinal='9' />
+                  <column datatype='real' name='weather_condition_severity' ordinal='10' />
+                  <column datatype='real' name='port_congestion_level' ordinal='11' />
+                  <column datatype='real' name='shipping_costs' ordinal='12' />
+                  <column datatype='real' name='supplier_reliability_score' ordinal='13' />
+                  <column datatype='real' name='lead_time_days' ordinal='14' />
+                  <column datatype='real' name='historical_demand' ordinal='15' />
+                  <column datatype='real' name='iot_temperature' ordinal='16' />
+                  <column datatype='real' name='cargo_condition_status' ordinal='17' />
+                  <column datatype='real' name='route_risk_level' ordinal='18' />
+                  <column datatype='real' name='customs_clearance_time' ordinal='19' />
+                  <column datatype='real' name='driver_behavior_score' ordinal='20' />
+                  <column datatype='real' name='fatigue_monitoring_score' ordinal='21' />
+                  <column datatype='real' name='disruption_likelihood_score' ordinal='22' />
+                  <column datatype='real' name='delay_probability' ordinal='23' />
+                  <column datatype='integer' name='risk_classification' ordinal='24' />
+                  <column datatype='real' name='delivery_time_deviation' ordinal='25' />
+                  <column datatype='string' name='vehicle_location' ordinal='26' />
+                  <column datatype='real' name='eta_variation_minutes' ordinal='27' />
+                  <column datatype='string' name='traffic_category' ordinal='28' />
+                  <column datatype='integer' name='severe_weather_flag' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Delay Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_logistics_data' name='federated.1ozg3r41qg6ctp1akycgz0l899df' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ozg3r41qg6ctp1akycgz0l899df'>
+            <column-instance column='[timestamp]' derivation='Sum' name='[sum:timestamp:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[timestamp]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1ozg3r41qg6ctp1akycgz0l899df].[sum:timestamp:qk]</cols>
+      </table>
+      <simple-id uuid='{A2709E94-3F20-4209-8626-59B013DCB69F}' />
+    </worksheet>
+    <worksheet name='KPI Cards'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_logistics_data' name='federated.1ozg3r41qg6ctp1akycgz0l899df' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ozg3r41qg6ctp1akycgz0l899df'>
+            <column caption='on_time_flag' datatype='integer' name='[Calculation_763078666546966528]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [delivery_time_deviation] &lt;= 0 THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='on_time%' datatype='real' name='[Calculation_763078666547306497]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Calculation_763078666546966528])' />
+            </column>
+            <column datatype='real' name='[delivery_time_deviation]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_763078666547306497]' derivation='User' name='[usr:Calculation_763078666547306497:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+          </pane>
+        </panes>
+        <rows>[federated.1ozg3r41qg6ctp1akycgz0l899df].[usr:Calculation_763078666547306497:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4A4FAD33-EBA8-43A0-8846-4E86DA63146A}' />
+    </worksheet>
+    <worksheet name='KPI_AvgDelay '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_logistics_data' name='federated.1ozg3r41qg6ctp1akycgz0l899df' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ozg3r41qg6ctp1akycgz0l899df'>
+            <column caption='delay_hours_absolute' datatype='real' name='[Calculation_763078666547650562]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ABS([delivery_time_deviation])' />
+            </column>
+            <column-instance column='[Calculation_763078666547650562]' derivation='Avg' name='[avg:Calculation_763078666547650562:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[delivery_time_deviation]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+          </pane>
+        </panes>
+        <rows>[federated.1ozg3r41qg6ctp1akycgz0l899df].[avg:Calculation_763078666547650562:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{0AC14EC6-C81B-4D10-95EE-13B1F7D788D7}' />
+    </worksheet>
+    <worksheet name='KPI_AvgDeviation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_logistics_data' name='federated.1ozg3r41qg6ctp1akycgz0l899df' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ozg3r41qg6ctp1akycgz0l899df'>
+            <column datatype='real' name='[delivery_time_deviation]' role='measure' type='quantitative' />
+            <column-instance column='[delivery_time_deviation]' derivation='Sum' name='[sum:delivery_time_deviation:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+          </pane>
+        </panes>
+        <rows>[federated.1ozg3r41qg6ctp1akycgz0l899df].[sum:delivery_time_deviation:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{48034F43-FC6C-4843-A7E0-2DA7F69AE34F}' />
+    </worksheet>
+    <worksheet name='Map View'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FFCDF626-0974-4B9C-8A65-8E5521E66485}' />
+    </worksheet>
+    <worksheet name='Ranked Bar Chart'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{04278741-C177-42CB-90A7-35311C48E25C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Cost vs Efficiency'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{429156DD-C422-4879-981A-4E4FC617229E}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard Assembly'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3908AF1F-5C35-4768-B1EA-CFF726CC83FF}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Delay &amp; Risk Heatmap'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{793BBECD-D963-4128-AB88-931C301042CC}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Delivery Performance'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C5D8A4C3-797A-49E2-9C2D-8AB8AE0D61CC}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Final Touches'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DAFAB6AA-6B44-421C-8E25-2DAF2CC25096}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Supplier Reliability'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6AC92B69-3F0D-4F93-AAC4-C787CCE56F81}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='KPI Cards'>
+      <cards>
+        <edge name='left'>
+          <strip size='192'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CBA4ADAD-FE14-455F-9FB8-F189259284AD}' />
+    </window>
+    <window class='worksheet' name='KPI_AvgDelay '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AAB9AE6F-4F87-4428-B725-97AD5D28DC76}' />
+    </window>
+    <window class='worksheet' name='KPI_AvgDeviation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CD794CBD-8D06-4B43-9EAE-978A828DA1CB}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Delay Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{27B6FCAF-74EE-416E-B1BB-091D790921D4}' />
+    </window>
+    <window class='dashboard' name='Delivery Performance'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{5F96027D-CDEA-4A4C-9AB0-8254D8B0AAFA}' />
+    </window>
+    <window class='dashboard' name='Delay &amp; Risk Heatmap'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{6696773F-3D3F-4D74-AF3F-F513EF73D092}' />
+    </window>
+    <window class='worksheet' name='Map View'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6E18D087-4F5B-44A9-97ED-361DD1559421}' />
+    </window>
+    <window class='dashboard' name='Cost vs Efficiency'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{FAD496A1-B466-47D7-91CB-AE443B47777A}' />
+    </window>
+    <window class='worksheet' name='Ranked Bar Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A4F201A7-FB54-472D-8AFD-2A0DE1AFE4D6}' />
+    </window>
+    <window class='dashboard' name='Supplier Reliability'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{F0A99C51-6CFC-4E4B-AB55-6BED2F01F056}' />
+    </window>
+    <window class='dashboard' name='Dashboard Assembly'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{5E8A8FA0-7494-449A-B85D-F43B826B7214}' />
+    </window>
+    <window class='dashboard' name='Final Touches'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{CEFE7623-14D1-47F0-B77D-DFC7423DEC19}' />
+    </window>
+  </windows>
+</workbook>
